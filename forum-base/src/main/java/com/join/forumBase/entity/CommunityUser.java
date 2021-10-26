@@ -1,4 +1,4 @@
-package generator.domain;
+package com.join.forumBase.entity;
 
 import java.io.Serializable;
 
