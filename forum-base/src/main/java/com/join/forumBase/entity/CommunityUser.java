@@ -55,7 +55,7 @@ public class CommunityUser implements Serializable {
     /**
      * 
      */
-    private Integer userAttertion;
+    private Integer userAttention;
 
     /**
      * 
@@ -193,15 +193,15 @@ public class CommunityUser implements Serializable {
     /**
      * 
      */
-    public Integer getUserAttertion() {
-        return userAttertion;
+    public Integer getUserAttention() {
+        return userAttention;
     }
 
     /**
      * 
      */
-    public void setUserAttertion(Integer userAttertion) {
-        this.userAttertion = userAttertion;
+    public void setUserAttention(Integer userAttention) {
+        this.userAttention = userAttention;
     }
 
     /**
@@ -239,7 +239,7 @@ public class CommunityUser implements Serializable {
             && (this.getUserEmail() == null ? other.getUserEmail() == null : this.getUserEmail().equals(other.getUserEmail()))
             && (this.getUserSignature() == null ? other.getUserSignature() == null : this.getUserSignature().equals(other.getUserSignature()))
             && (this.getUserHeadimage() == null ? other.getUserHeadimage() == null : this.getUserHeadimage().equals(other.getUserHeadimage()))
-            && (this.getUserAttertion() == null ? other.getUserAttertion() == null : this.getUserAttertion().equals(other.getUserAttertion()))
+            && (this.getUserAttention() == null ? other.getUserAttention() == null : this.getUserAttention().equals(other.getUserAttention()))
             && (this.getUserFans() == null ? other.getUserFans() == null : this.getUserFans().equals(other.getUserFans()));
     }
 
@@ -256,7 +256,7 @@ public class CommunityUser implements Serializable {
         result = prime * result + ((getUserEmail() == null) ? 0 : getUserEmail().hashCode());
         result = prime * result + ((getUserSignature() == null) ? 0 : getUserSignature().hashCode());
         result = prime * result + ((getUserHeadimage() == null) ? 0 : getUserHeadimage().hashCode());
-        result = prime * result + ((getUserAttertion() == null) ? 0 : getUserAttertion().hashCode());
+        result = prime * result + ((getUserAttention() == null) ? 0 : getUserAttention().hashCode());
         result = prime * result + ((getUserFans() == null) ? 0 : getUserFans().hashCode());
         return result;
     }
@@ -276,7 +276,7 @@ public class CommunityUser implements Serializable {
         sb.append(", userEmail=").append(userEmail);
         sb.append(", userSignature=").append(userSignature);
         sb.append(", userHeadimage=").append(userHeadimage);
-        sb.append(", userAttertion=").append(userAttertion);
+        sb.append(", userAttertion=").append(userAttention);
         sb.append(", userFans=").append(userFans);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
