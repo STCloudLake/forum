@@ -1,12 +1,7 @@
 package com.join.forumBase.util;
 
 import com.baomidou.mybatisplus.generator.FastAutoGenerator;
-import com.baomidou.mybatisplus.generator.config.OutputFile;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
-import com.join.forumBase.config.GeneratorConfig;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.Collections;
 
 public class Generator {
 
@@ -18,25 +13,32 @@ public class Generator {
 
     public static void main(String[] args) {
         System.out.println(generatorConfig.toString());
+
+        String[] tables = {"bbs_article",
+                "bbs_article_type",
+                "bbs_comment",
+                "community_user"
+        };
+
         generateDao(generatorConfig,
-                "D:\\卓音社区\\社区项目\\forum\\joinForum\\forum-dao\\src\\main\\java\\",
+                "forum-dao\\src\\main\\java",
                 "forumDao",
-                "bbs_article");
+                tables);
 
         generateService(generatorConfig,
-                "D:\\卓音社区\\社区项目\\forum\\joinForum\\forum-service\\src\\main\\java\\",
+                "forum-service\\src\\main\\java",
                 "forumService",
-                "bbs_article");
+                tables);
 
         generateWeb(generatorConfig,
-                "D:\\卓音社区\\社区项目\\forum\\joinForum\\forum-web\\src\\main\\java\\",
+                "forum-web\\src\\main\\java",
                 "forumWeb",
-                "bbs_article");
+                tables);
 
     }
 
-    private static void generateDao(GeneratorConfig generatorConfig, String dir, String module, String...table){
-        FastAutoGenerator.create(generatorConfig.getUrl(),generatorConfig.getUsername() ,generatorConfig.getPassword())
+    private static void generateDao(GeneratorConfig generatorConfig, String dir, String module, String... table) {
+        FastAutoGenerator.create(generatorConfig.getUrl(), generatorConfig.getUsername(), generatorConfig.getPassword())
                 .globalConfig(builder -> {
                     builder.author("join") // 设置作者
 //                            .enableSwagger() // 开启 swagger 模式
@@ -49,20 +51,20 @@ public class Generator {
                 })
                 .templateConfig(builder -> {
                     builder.controller("")
-                    .service("")
-                    .serviceImpl("")
-                    .build();
+                            .service("")
+                            .serviceImpl("")
+                            .build();
                 })
                 .strategyConfig(builder -> {
                     builder.addInclude(table.clone()) // 设置需要生成的表名
-                            .addTablePrefix("bbs_", "c_"); // 设置过滤表前缀
+                            .addTablePrefix("bbs_", "community_"); // 设置过滤表前缀
                 })
                 .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
                 .execute();
     }
 
-    private static void generateService(GeneratorConfig generatorConfig, String dir, String module, String...table){
-        FastAutoGenerator.create(generatorConfig.getUrl(),generatorConfig.getUsername() ,generatorConfig.getPassword())
+    private static void generateService(GeneratorConfig generatorConfig, String dir, String module, String... table) {
+        FastAutoGenerator.create(generatorConfig.getUrl(), generatorConfig.getUsername(), generatorConfig.getPassword())
                 .globalConfig(builder -> {
                     builder.author("join") // 设置作者
 //                            .enableSwagger() // 开启 swagger 模式
@@ -82,14 +84,17 @@ public class Generator {
                 })
                 .strategyConfig(builder -> {
                     builder.addInclude(table.clone()) // 设置需要生成的表名
-                            .addTablePrefix("bbs_", "c_"); // 设置过滤表前缀
+                            .addTablePrefix("bbs_", "community_")
+                            .serviceBuilder()
+                            .formatServiceFileName("%sService")
+                            .formatServiceImplFileName("%sServiceImpl"); // 设置过滤表前缀
                 })
                 .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
                 .execute();
     }
 
-    private static void generateWeb(GeneratorConfig generatorConfig, String dir, String module, String...table){
-        FastAutoGenerator.create(generatorConfig.getUrl(),generatorConfig.getUsername() ,generatorConfig.getPassword())
+    private static void generateWeb(GeneratorConfig generatorConfig, String dir, String module, String... table) {
+        FastAutoGenerator.create(generatorConfig.getUrl(), generatorConfig.getUsername(), generatorConfig.getPassword())
                 .globalConfig(builder -> {
                     builder.author("join") // 设置作者
 //                            .enableSwagger() // 开启 swagger 模式
@@ -110,7 +115,7 @@ public class Generator {
                 })
                 .strategyConfig(builder -> {
                     builder.addInclude(table.clone()) // 设置需要生成的表名
-                            .addTablePrefix("bbs_", "c_"); // 设置过滤表前缀
+                            .addTablePrefix("bbs_", "community_"); // 设置过滤表前缀
                 })
                 .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
                 .execute();
