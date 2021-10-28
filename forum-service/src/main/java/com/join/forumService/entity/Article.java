@@ -3,12 +3,13 @@ package com.join.forumService.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author join
@@ -30,12 +31,12 @@ public class Article implements Serializable {
     /**
      * 文章类型id
      */
-    private Integer articleTypeId;
+    private Long articleTypeId;
 
     /**
      * 作者id
      */
-    private Integer articleUserId;
+    private Long articleUserId;
 
     /**
      * 文章主体内容
@@ -79,6 +80,7 @@ public class Article implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }
+
     public String getArticleTitle() {
         return articleTitle;
     }
@@ -86,20 +88,23 @@ public class Article implements Serializable {
     public void setArticleTitle(String articleTitle) {
         this.articleTitle = articleTitle;
     }
-    public Integer getArticleTypeId() {
+
+    public Long getArticleTypeId() {
         return articleTypeId;
     }
 
-    public void setArticleTypeId(Integer articleTypeId) {
+    public void setArticleTypeId(Long articleTypeId) {
         this.articleTypeId = articleTypeId;
     }
-    public Integer getArticleUserId() {
+
+    public Long getArticleUserId() {
         return articleUserId;
     }
 
-    public void setArticleUserId(Integer articleUserId) {
+    public void setArticleUserId(Long articleUserId) {
         this.articleUserId = articleUserId;
     }
+
     public String getArticleContent() {
         return articleContent;
     }
@@ -107,6 +112,7 @@ public class Article implements Serializable {
     public void setArticleContent(String articleContent) {
         this.articleContent = articleContent;
     }
+
     public Integer getArticleViews() {
         return articleViews;
     }
@@ -114,6 +120,7 @@ public class Article implements Serializable {
     public void setArticleViews(Integer articleViews) {
         this.articleViews = articleViews;
     }
+
     public LocalDateTime getArticleSdtime() {
         return articleSdtime;
     }
@@ -121,6 +128,7 @@ public class Article implements Serializable {
     public void setArticleSdtime(LocalDateTime articleSdtime) {
         this.articleSdtime = articleSdtime;
     }
+
     public LocalDateTime getArticleUptime() {
         return articleUptime;
     }
@@ -128,6 +136,7 @@ public class Article implements Serializable {
     public void setArticleUptime(LocalDateTime articleUptime) {
         this.articleUptime = articleUptime;
     }
+
     public Integer getArticleLikes() {
         return articleLikes;
     }
@@ -135,6 +144,7 @@ public class Article implements Serializable {
     public void setArticleLikes(Integer articleLikes) {
         this.articleLikes = articleLikes;
     }
+
     public Integer getArticleCollections() {
         return articleCollections;
     }
@@ -142,6 +152,7 @@ public class Article implements Serializable {
     public void setArticleCollections(Integer articleCollections) {
         this.articleCollections = articleCollections;
     }
+
     public Integer getArticleComments() {
         return articleComments;
     }
@@ -153,17 +164,17 @@ public class Article implements Serializable {
     @Override
     public String toString() {
         return "Article{" +
-            "id=" + id +
-            ", articleTitle=" + articleTitle +
-            ", articleTypeId=" + articleTypeId +
-            ", articleUserId=" + articleUserId +
-            ", articleContent=" + articleContent +
-            ", articleViews=" + articleViews +
-            ", articleSdtime=" + articleSdtime +
-            ", articleUptime=" + articleUptime +
-            ", articleLikes=" + articleLikes +
-            ", articleCollections=" + articleCollections +
-            ", articleComments=" + articleComments +
-        "}";
+                "id=" + id +
+                ", articleTitle=" + articleTitle +
+                ", articleTypeId=" + articleTypeId +
+                ", articleUserId=" + articleUserId +
+                ", articleContent=" + articleContent +
+                ", articleViews=" + articleViews +
+                ", articleSdtime=" + articleSdtime +
+                ", articleUptime=" + articleUptime +
+                ", articleLikes=" + articleLikes +
+                ", articleCollections=" + articleCollections +
+                ", articleComments=" + articleComments +
+                "}";
     }
 }
