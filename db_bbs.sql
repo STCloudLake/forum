@@ -25,8 +25,8 @@ CREATE TABLE `bbs_article`
 (
     `id`                  bigint(0)                                                     NOT NULL AUTO_INCREMENT,
     `article_title`       varchar(80) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NOT NULL COMMENT '文章标题',
-    `article_type_id`     int(0)                                                        NOT NULL COMMENT '文章类型id',
-    `article_user_id`     int(0)                                                        NOT NULL COMMENT '作者id',
+    `article_type_id`     bigint(0)                                                        NOT NULL COMMENT '文章类型id',
+    `article_user_id`     bigint(0)                                                        NOT NULL COMMENT '作者id',
     `article_content`     varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '文章主体内容',
     `article_views`       int(10) UNSIGNED ZEROFILL                                     NOT NULL DEFAULT 0000000000 COMMENT '文章浏览量',
     `article_sdTime`      timestamp(0)                                                  NOT NULL COMMENT '文章发布时间',

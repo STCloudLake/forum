@@ -19,19 +19,19 @@ public class ReturnUtil {
     private String msg;
     private Object data;
 
-    public static ReturnUtil success(Object data) {
-        return success(data, CodeEnum.SUCCESS.getMsg());
+    public static ReturnUtil success(String msg) {
+        return success(msg,null);
     }
 
-    public static ReturnUtil success(Object data, String msg) {
+    public static ReturnUtil success( String msg,Object data) {
         return returnUtil(CodeEnum.SUCCESS.getValue(), msg, data);
     }
 
-    public static ReturnUtil fail(Object data) {
-        return fail(data, CodeEnum.ERROR.getMsg());
+    public static ReturnUtil fail(String msg) {
+        return fail(msg, null);
     }
 
-    public static ReturnUtil fail(Object data, String msg) {
+    public static ReturnUtil fail( String msg,Object data) {
         return returnUtil(CodeEnum.ERROR.getValue(), msg, data);
 
     }
