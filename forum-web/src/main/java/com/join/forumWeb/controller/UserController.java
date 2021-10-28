@@ -1,9 +1,9 @@
 package com.join.forumWeb.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * <p>
@@ -18,6 +18,13 @@ import org.springframework.stereotype.Controller;
 public class UserController {
     @RequestMapping("/add/signature")
     public String addSignature() {
+
+
+        return "";
+    }
+
+    @RequestMapping("/add/signature")
+    public String addSignature(@RequestParam("userSignature")String userSignature) {
 
 
         return "";
