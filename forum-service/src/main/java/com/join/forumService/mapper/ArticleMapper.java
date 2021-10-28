@@ -1,7 +1,7 @@
-package com.join.forumDao.mapper;
+package com.join.forumService.mapper;
 
-import com.join.forumDao.entity.Comment;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.join.forumDao.entity.Article;
 
 /**
  * <p>
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author join
  * @since 2021-10-27
  */
-public interface CommentMapper extends BaseMapper<Comment> {
+public interface ArticleMapper<T> extends BaseMapper<T> {
 
 }

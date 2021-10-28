@@ -3,11 +3,12 @@ package com.join.forumService.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author join
@@ -58,6 +59,7 @@ public class Comment implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }
+
     public String getCommentContent() {
         return commentContent;
     }
@@ -65,6 +67,7 @@ public class Comment implements Serializable {
     public void setCommentContent(String commentContent) {
         this.commentContent = commentContent;
     }
+
     public Long getCommentUserId() {
         return commentUserId;
     }
@@ -72,6 +75,7 @@ public class Comment implements Serializable {
     public void setCommentUserId(Long commentUserId) {
         this.commentUserId = commentUserId;
     }
+
     public Long getCommentArticleId() {
         return commentArticleId;
     }
@@ -79,6 +83,7 @@ public class Comment implements Serializable {
     public void setCommentArticleId(Long commentArticleId) {
         this.commentArticleId = commentArticleId;
     }
+
     public String getCommentSdtime() {
         return commentSdtime;
     }
@@ -86,6 +91,7 @@ public class Comment implements Serializable {
     public void setCommentSdtime(String commentSdtime) {
         this.commentSdtime = commentSdtime;
     }
+
     public Integer getCommentLikes() {
         return commentLikes;
     }
@@ -93,6 +99,7 @@ public class Comment implements Serializable {
     public void setCommentLikes(Integer commentLikes) {
         this.commentLikes = commentLikes;
     }
+
     public Long getCommentCommentId() {
         return commentCommentId;
     }
@@ -104,13 +111,13 @@ public class Comment implements Serializable {
     @Override
     public String toString() {
         return "Comment{" +
-            "id=" + id +
-            ", commentContent=" + commentContent +
-            ", commentUserId=" + commentUserId +
-            ", commentArticleId=" + commentArticleId +
-            ", commentSdtime=" + commentSdtime +
-            ", commentLikes=" + commentLikes +
-            ", commentCommentId=" + commentCommentId +
-        "}";
+                "id=" + id +
+                ", commentContent=" + commentContent +
+                ", commentUserId=" + commentUserId +
+                ", commentArticleId=" + commentArticleId +
+                ", commentSdtime=" + commentSdtime +
+                ", commentLikes=" + commentLikes +
+                ", commentCommentId=" + commentCommentId +
+                "}";
     }
 }

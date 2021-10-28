@@ -3,22 +3,21 @@ package com.join.forumBase.entity;
 import java.io.Serializable;
 
 /**
- * 
  * @TableName bbs_comment
  */
 public class BbsComment implements Serializable {
     /**
-     * 
+     *
      */
     private Long id;
 
     /**
-     * 
+     *
      */
     private String commentContent;
 
     /**
-     * 
+     *
      */
     private Long commentUserId;
 
@@ -28,7 +27,7 @@ public class BbsComment implements Serializable {
     private Long commentCommentId;
 
     /**
-     * 
+     *
      */
     private Long commentArticleId;
 
@@ -45,42 +44,42 @@ public class BbsComment implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 
+     *
      */
     public Long getId() {
         return id;
     }
 
     /**
-     * 
+     *
      */
     public void setId(Long id) {
         this.id = id;
     }
 
     /**
-     * 
+     *
      */
     public String getCommentContent() {
         return commentContent;
     }
 
     /**
-     * 
+     *
      */
     public void setCommentContent(String commentContent) {
         this.commentContent = commentContent;
     }
 
     /**
-     * 
+     *
      */
     public Long getCommentUserId() {
         return commentUserId;
     }
 
     /**
-     * 
+     *
      */
     public void setCommentUserId(Long commentUserId) {
         this.commentUserId = commentUserId;
@@ -101,14 +100,14 @@ public class BbsComment implements Serializable {
     }
 
     /**
-     * 
+     *
      */
     public Long getCommentArticleId() {
         return commentArticleId;
     }
 
     /**
-     * 
+     *
      */
     public void setCommentArticleId(Long commentArticleId) {
         this.commentArticleId = commentArticleId;
@@ -155,12 +154,12 @@ public class BbsComment implements Serializable {
         }
         BbsComment other = (BbsComment) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getCommentContent() == null ? other.getCommentContent() == null : this.getCommentContent().equals(other.getCommentContent()))
-            && (this.getCommentUserId() == null ? other.getCommentUserId() == null : this.getCommentUserId().equals(other.getCommentUserId()))
-            && (this.getCommentCommentId() == null ? other.getCommentCommentId() == null : this.getCommentCommentId().equals(other.getCommentCommentId()))
-            && (this.getCommentArticleId() == null ? other.getCommentArticleId() == null : this.getCommentArticleId().equals(other.getCommentArticleId()))
-            && (this.getCommentSdtime() == null ? other.getCommentSdtime() == null : this.getCommentSdtime().equals(other.getCommentSdtime()))
-            && (this.getCommentLikes() == null ? other.getCommentLikes() == null : this.getCommentLikes().equals(other.getCommentLikes()));
+                && (this.getCommentContent() == null ? other.getCommentContent() == null : this.getCommentContent().equals(other.getCommentContent()))
+                && (this.getCommentUserId() == null ? other.getCommentUserId() == null : this.getCommentUserId().equals(other.getCommentUserId()))
+                && (this.getCommentCommentId() == null ? other.getCommentCommentId() == null : this.getCommentCommentId().equals(other.getCommentCommentId()))
+                && (this.getCommentArticleId() == null ? other.getCommentArticleId() == null : this.getCommentArticleId().equals(other.getCommentArticleId()))
+                && (this.getCommentSdtime() == null ? other.getCommentSdtime() == null : this.getCommentSdtime().equals(other.getCommentSdtime()))
+                && (this.getCommentLikes() == null ? other.getCommentLikes() == null : this.getCommentLikes().equals(other.getCommentLikes()));
     }
 
     @Override

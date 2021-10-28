@@ -3,11 +3,12 @@ package com.join.forumService.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author join
@@ -43,6 +44,7 @@ public class ArticleType implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }
+
     public String getTypeName() {
         return typeName;
     }
@@ -50,6 +52,7 @@ public class ArticleType implements Serializable {
     public void setTypeName(String typeName) {
         this.typeName = typeName;
     }
+
     public String getTypeInfo() {
         return typeInfo;
     }
@@ -57,6 +60,7 @@ public class ArticleType implements Serializable {
     public void setTypeInfo(String typeInfo) {
         this.typeInfo = typeInfo;
     }
+
     public String getTypeParents() {
         return typeParents;
     }
@@ -68,10 +72,10 @@ public class ArticleType implements Serializable {
     @Override
     public String toString() {
         return "ArticleType{" +
-            "id=" + id +
-            ", typeName=" + typeName +
-            ", typeInfo=" + typeInfo +
-            ", typeParents=" + typeParents +
-        "}";
+                "id=" + id +
+                ", typeName=" + typeName +
+                ", typeInfo=" + typeInfo +
+                ", typeParents=" + typeParents +
+                "}";
     }
 }

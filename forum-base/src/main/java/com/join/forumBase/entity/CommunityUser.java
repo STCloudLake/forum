@@ -3,216 +3,215 @@ package com.join.forumBase.entity;
 import java.io.Serializable;
 
 /**
- * 
  * @TableName community_user
  */
 public class CommunityUser implements Serializable {
     /**
-     * 
+     *
      */
     private Long id;
 
     /**
-     * 
+     *
      */
     private String userName;
 
     /**
-     * 
+     *
      */
     private String userPassword;
 
     /**
-     * 
+     *
      */
     private String userNickname;
 
     /**
-     * 
+     *
      */
     private Object userGender;
 
     /**
-     * 
+     *
      */
     private String userPhone;
 
     /**
-     * 
+     *
      */
     private String userEmail;
 
     /**
-     * 
+     *
      */
     private String userSignature;
 
     /**
-     * 
+     *
      */
     private String userHeadimage;
 
     /**
-     * 
+     *
      */
     private Integer userAttention;
 
     /**
-     * 
+     *
      */
     private Integer userFans;
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 
+     *
      */
     public Long getId() {
         return id;
     }
 
     /**
-     * 
+     *
      */
     public void setId(Long id) {
         this.id = id;
     }
 
     /**
-     * 
+     *
      */
     public String getUserName() {
         return userName;
     }
 
     /**
-     * 
+     *
      */
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
     /**
-     * 
+     *
      */
     public String getUserPassword() {
         return userPassword;
     }
 
     /**
-     * 
+     *
      */
     public void setUserPassword(String userPassword) {
         this.userPassword = userPassword;
     }
 
     /**
-     * 
+     *
      */
     public String getUserNickname() {
         return userNickname;
     }
 
     /**
-     * 
+     *
      */
     public void setUserNickname(String userNickname) {
         this.userNickname = userNickname;
     }
 
     /**
-     * 
+     *
      */
     public Object getUserGender() {
         return userGender;
     }
 
     /**
-     * 
+     *
      */
     public void setUserGender(Object userGender) {
         this.userGender = userGender;
     }
 
     /**
-     * 
+     *
      */
     public String getUserPhone() {
         return userPhone;
     }
 
     /**
-     * 
+     *
      */
     public void setUserPhone(String userPhone) {
         this.userPhone = userPhone;
     }
 
     /**
-     * 
+     *
      */
     public String getUserEmail() {
         return userEmail;
     }
 
     /**
-     * 
+     *
      */
     public void setUserEmail(String userEmail) {
         this.userEmail = userEmail;
     }
 
     /**
-     * 
+     *
      */
     public String getUserSignature() {
         return userSignature;
     }
 
     /**
-     * 
+     *
      */
     public void setUserSignature(String userSignature) {
         this.userSignature = userSignature;
     }
 
     /**
-     * 
+     *
      */
     public String getUserHeadimage() {
         return userHeadimage;
     }
 
     /**
-     * 
+     *
      */
     public void setUserHeadimage(String userHeadimage) {
         this.userHeadimage = userHeadimage;
     }
 
     /**
-     * 
+     *
      */
     public Integer getUserAttention() {
         return userAttention;
     }
 
     /**
-     * 
+     *
      */
     public void setUserAttention(Integer userAttention) {
         this.userAttention = userAttention;
     }
 
     /**
-     * 
+     *
      */
     public Integer getUserFans() {
         return userFans;
     }
 
     /**
-     * 
+     *
      */
     public void setUserFans(Integer userFans) {
         this.userFans = userFans;
@@ -231,16 +230,16 @@ public class CommunityUser implements Serializable {
         }
         CommunityUser other = (CommunityUser) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getUserName() == null ? other.getUserName() == null : this.getUserName().equals(other.getUserName()))
-            && (this.getUserPassword() == null ? other.getUserPassword() == null : this.getUserPassword().equals(other.getUserPassword()))
-            && (this.getUserNickname() == null ? other.getUserNickname() == null : this.getUserNickname().equals(other.getUserNickname()))
-            && (this.getUserGender() == null ? other.getUserGender() == null : this.getUserGender().equals(other.getUserGender()))
-            && (this.getUserPhone() == null ? other.getUserPhone() == null : this.getUserPhone().equals(other.getUserPhone()))
-            && (this.getUserEmail() == null ? other.getUserEmail() == null : this.getUserEmail().equals(other.getUserEmail()))
-            && (this.getUserSignature() == null ? other.getUserSignature() == null : this.getUserSignature().equals(other.getUserSignature()))
-            && (this.getUserHeadimage() == null ? other.getUserHeadimage() == null : this.getUserHeadimage().equals(other.getUserHeadimage()))
-            && (this.getUserAttention() == null ? other.getUserAttention() == null : this.getUserAttention().equals(other.getUserAttention()))
-            && (this.getUserFans() == null ? other.getUserFans() == null : this.getUserFans().equals(other.getUserFans()));
+                && (this.getUserName() == null ? other.getUserName() == null : this.getUserName().equals(other.getUserName()))
+                && (this.getUserPassword() == null ? other.getUserPassword() == null : this.getUserPassword().equals(other.getUserPassword()))
+                && (this.getUserNickname() == null ? other.getUserNickname() == null : this.getUserNickname().equals(other.getUserNickname()))
+                && (this.getUserGender() == null ? other.getUserGender() == null : this.getUserGender().equals(other.getUserGender()))
+                && (this.getUserPhone() == null ? other.getUserPhone() == null : this.getUserPhone().equals(other.getUserPhone()))
+                && (this.getUserEmail() == null ? other.getUserEmail() == null : this.getUserEmail().equals(other.getUserEmail()))
+                && (this.getUserSignature() == null ? other.getUserSignature() == null : this.getUserSignature().equals(other.getUserSignature()))
+                && (this.getUserHeadimage() == null ? other.getUserHeadimage() == null : this.getUserHeadimage().equals(other.getUserHeadimage()))
+                && (this.getUserAttention() == null ? other.getUserAttention() == null : this.getUserAttention().equals(other.getUserAttention()))
+                && (this.getUserFans() == null ? other.getUserFans() == null : this.getUserFans().equals(other.getUserFans()));
     }
 
     @Override

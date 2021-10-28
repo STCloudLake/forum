@@ -20,20 +20,20 @@ public class Generator {
                 "community_user"
         };
 
-        generateDao(generatorConfig,
+/*        generateDao(generatorConfig,
                 "forum-dao\\src\\main\\java",
                 "forumDao",
-                tables);
+                tables);*/
 
         generateService(generatorConfig,
-                "forum-service\\src\\main\\java",
+                "forum-com.join.forumService.com.join.forumService.service\\src\\main\\java",
                 "forumService",
                 tables);
 
-        generateWeb(generatorConfig,
+/*        generateWeb(generatorConfig,
                 "forum-web\\src\\main\\java",
                 "forumWeb",
-                tables);
+                tables);*/
 
     }
 

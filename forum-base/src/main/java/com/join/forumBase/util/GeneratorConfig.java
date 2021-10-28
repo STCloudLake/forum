@@ -24,13 +24,12 @@ public class GeneratorConfig {
     }
 
 
-//    @Value("url")
+    //    @Value("url")
     private String url;
-//    @Value("username")
+    //    @Value("username")
     private String username;
-//    @Value("password")
+    //    @Value("password")
     private String password;
-
 
 
 }

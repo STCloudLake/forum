@@ -3,11 +3,12 @@ package com.join.forumService.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author join
@@ -48,6 +49,7 @@ public class User implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }
+
     public Integer getUserAccount() {
         return userAccount;
     }
@@ -55,6 +57,7 @@ public class User implements Serializable {
     public void setUserAccount(Integer userAccount) {
         this.userAccount = userAccount;
     }
+
     public String getUserPassword() {
         return userPassword;
     }
@@ -62,6 +65,7 @@ public class User implements Serializable {
     public void setUserPassword(String userPassword) {
         this.userPassword = userPassword;
     }
+
     public String getUserName() {
         return userName;
     }
@@ -69,6 +73,7 @@ public class User implements Serializable {
     public void setUserName(String userName) {
         this.userName = userName;
     }
+
     public String getUserGender() {
         return userGender;
     }
@@ -76,6 +81,7 @@ public class User implements Serializable {
     public void setUserGender(String userGender) {
         this.userGender = userGender;
     }
+
     public String getUserPhone() {
         return userPhone;
     }
@@ -83,6 +89,7 @@ public class User implements Serializable {
     public void setUserPhone(String userPhone) {
         this.userPhone = userPhone;
     }
+
     public String getUserEmail() {
         return userEmail;
     }
@@ -90,6 +97,7 @@ public class User implements Serializable {
     public void setUserEmail(String userEmail) {
         this.userEmail = userEmail;
     }
+
     public String getUserSignature() {
         return userSignature;
     }
@@ -97,6 +105,7 @@ public class User implements Serializable {
     public void setUserSignature(String userSignature) {
         this.userSignature = userSignature;
     }
+
     public String getUserHeadimage() {
         return userHeadimage;
     }
@@ -104,6 +113,7 @@ public class User implements Serializable {
     public void setUserHeadimage(String userHeadimage) {
         this.userHeadimage = userHeadimage;
     }
+
     public Integer getUserAttention() {
         return userAttention;
     }
@@ -111,6 +121,7 @@ public class User implements Serializable {
     public void setUserAttention(Integer userAttention) {
         this.userAttention = userAttention;
     }
+
     public Integer getUserFans() {
         return userFans;
     }
@@ -122,17 +133,17 @@ public class User implements Serializable {
     @Override
     public String toString() {
         return "User{" +
-            "id=" + id +
-            ", userAccount=" + userAccount +
-            ", userPassword=" + userPassword +
-            ", userName=" + userName +
-            ", userGender=" + userGender +
-            ", userPhone=" + userPhone +
-            ", userEmail=" + userEmail +
-            ", userSignature=" + userSignature +
-            ", userHeadimage=" + userHeadimage +
-            ", userAttention=" + userAttention +
-            ", userFans=" + userFans +
-        "}";
+                "id=" + id +
+                ", userAccount=" + userAccount +
+                ", userPassword=" + userPassword +
+                ", userName=" + userName +
+                ", userGender=" + userGender +
+                ", userPhone=" + userPhone +
+                ", userEmail=" + userEmail +
+                ", userSignature=" + userSignature +
+                ", userHeadimage=" + userHeadimage +
+                ", userAttention=" + userAttention +
+                ", userFans=" + userFans +
+                "}";
     }
 }
