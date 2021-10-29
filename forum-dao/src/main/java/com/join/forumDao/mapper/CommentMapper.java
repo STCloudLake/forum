@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author join
  * @since 2021-10-27
  */
-public interface CommentMapper extends BaseMapper<Comment> {
+public interface CommentMapper<T> extends BaseMapper<T> {
 
 }

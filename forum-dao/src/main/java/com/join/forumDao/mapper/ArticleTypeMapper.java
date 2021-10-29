@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author join
  * @since 2021-10-27
  */
-public interface ArticleTypeMapper extends BaseMapper<ArticleType> {
+public interface ArticleTypeMapper<T> extends BaseMapper<T> {
 
 }
