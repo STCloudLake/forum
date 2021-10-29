@@ -4,6 +4,7 @@ import com.alibaba.druid.support.json.JSONUtils;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.databind.util.JSONPObject;
+import lombok.Data;
 import lombok.ToString;
 
 import java.util.HashMap;
@@ -13,6 +14,7 @@ import java.util.function.ObjLongConsumer;
 /**
  * @author hxt
  */
+@Data
 public class ReturnUtil {
 
     private String code;
@@ -47,7 +49,6 @@ public class ReturnUtil {
 
     @Override
     public String toString() {
-        return JSONUtils.toJSONString(this);
+        return JsonUtil.getJson(this);
     }
-
 }
