@@ -1,7 +1,7 @@
 package com.join.forumService.service.impl;
 
+import com.join.forumDao.mapper.ArticleTypeMapper;
 import com.join.forumService.entity.ArticleType;
-import com.join.forumService.mapper.ArticleTypeMapper;
 import com.join.forumService.service.ArticleTypeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
