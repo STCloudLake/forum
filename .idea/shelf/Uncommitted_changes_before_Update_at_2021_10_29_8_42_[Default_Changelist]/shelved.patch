@@ -1,0 +1,7 @@
+Index: forum-service/src/main/resources/123.txt
+===================================================================
+--- forum-service/src/main/resources/123.txt	(revision c90cb739774cc957d0e1f9e345a21157c4a9e749)
++++ forum-service/src/main/resources/123.txt	(revision c90cb739774cc957d0e1f9e345a21157c4a9e749)
+@@ -1,1 +0,0 @@
+-faf
+\ No newline at end of file

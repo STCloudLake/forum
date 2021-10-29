@@ -1,0 +1,14 @@
+Index: master
+===================================================================
+--- master	(revision 4f47961145f12feaa821c62ae166f844932f8e25)
++++ master	(revision 4f47961145f12feaa821c62ae166f844932f8e25)
+@@ -1,1 +0,0 @@
+-fsafa
+\ No newline at end of file
+Index: 111.txt
+===================================================================
+--- 111.txt	(revision 4f47961145f12feaa821c62ae166f844932f8e25)
++++ 111.txt	(revision 4f47961145f12feaa821c62ae166f844932f8e25)
+@@ -1,1 +0,0 @@
+-111
+\ No newline at end of file
